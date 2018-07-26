@@ -1,0 +1,41 @@
+{
+  "name": "common-mq",
+  "version": "1.0.0",
+  "description": "A common library for anything message queue related for the Platform group of services.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build:production": "webpack --mode=production",
+    "lint": "eslint .",
+    "test:unit": "jest",
+    "test": "npm run lint && npm run test:unit"
+  },
+  "publishConfig": {
+    "registry": "https://pillarproject.jfrog.io/pillarproject/api/npm/npm/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pillarwallet/common-mq.git"
+  },
+  "author": "Kieran Goodary <kieran@2030.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pillarwallet/common-mq/issues"
+  },
+  "homepage": "https://github.com/pillarwallet/common-mq#readme",
+  "dependencies": {
+    "amqplib": "0.5.2"
+  },
+  "devDependencies": {
+    "eslint": "5.0.1",
+    "eslint-config-airbnb-base": "13.0.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-jest": "21.17.0",
+    "eslint-plugin-prettier": "2.6.1",
+    "jest": "22.4.4",
+    "jest-cli": "22.4.4",
+    "prettier": "1.13.7",
+    "webpack": "4.15.1",
+    "webpack-cli": "3.0.8"
+  }
+}
