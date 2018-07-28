@@ -1,5 +1,5 @@
 {
-  "name": "common-mq",
+  "name": "@pillarwallet/common-mq",
   "version": "1.0.0",
   "description": "A common library for anything message queue related for the Platform group of services.",
   "main": "dist/index.js",
