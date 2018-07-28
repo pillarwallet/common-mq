@@ -37,6 +37,9 @@ jobs:
           name: Create distribution files
           command: npm run build:production
       - run:
+          name: Commit and push updated dist files
+          command: git add . && git commit
+      - run:
           name: Append CircleCI build number to version
           command: |
             git config user.email "devops@pillar.io"
