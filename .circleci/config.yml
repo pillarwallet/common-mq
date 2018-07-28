@@ -51,9 +51,6 @@ jobs:
       - run:
           name: Publish package to Artifactory
           command: npm publish
-      - run:
-          name: Tag and Push
-          command: git push && git push --tags
 
 workflows:
   version: 2
