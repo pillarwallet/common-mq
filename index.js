@@ -1,5 +1,3 @@
-const amqp = require('./lib/amqp');
+const AMQP = require('./lib/amqp');
 
-module.exports = {
-  amqp,
-};
+module.exports = AMQP;

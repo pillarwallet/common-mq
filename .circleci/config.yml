@@ -34,12 +34,6 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
-          name: Create distribution files
-          command: npm run build:production
-      - run:
-          name: Commit and push updated dist files
-          command: git config --global user.email "automation@pillarproject.io" && git config --global user.name "CircleCI" && git add . && git commit -m "Updating dist files from CircleCI"
-      - run:
           name: Append CircleCI build number to version
           command: |
             git config user.email "devops@pillar.io"

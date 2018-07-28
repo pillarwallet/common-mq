@@ -1,5 +1,5 @@
 const amqplib = require('amqplib');
-const { AMQP } = require('../../lib/amqp');
+const AMQP = require('../../dist');
 
 describe('The AMQP Class', () => {
   let MQ;
