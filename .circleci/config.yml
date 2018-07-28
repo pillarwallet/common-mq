@@ -38,7 +38,7 @@ jobs:
           command: npm run build:production
       - run:
           name: Commit and push updated dist files
-          command: git config --global user.email "automation@pillarproject.io" && git config --global user.name "CircleCI" && git add . && git commit
+          command: git config --global user.email "automation@pillarproject.io" && git config --global user.name "CircleCI" && git add . && git commit =m "Updating dist files from CircleCI"
       - run:
           name: Append CircleCI build number to version
           command: |
