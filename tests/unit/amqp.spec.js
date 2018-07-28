@@ -3,7 +3,7 @@ const { AMQP } = require('../../lib/amqp');
 
 describe('The AMQP Class', () => {
   let MQ;
-  let mqConnectToTopicSpy;
+  let mqConnectToTopicSpy; // eslint-disable-line
   let mqPushToTopicSpy;
   let emitSpy;
 
